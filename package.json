@@ -1,6 +1,7 @@
 {
   "name": "pwa",
-  "version": "0.1.0",
+  "homepage": "https://github.com/springs-dev/pwa-demo.git",
+  "version": "0.0.1",
   "private": true,
   "dependencies": {
     "firebase": "^4.10.1",
@@ -17,6 +18,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.1.0"
   }
 }
